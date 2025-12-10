@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proficiency Tracker - Software Development</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Software Development Proficiency</h1>
+            <p class="subtitle">Competency Assessment & Ratings</p>
+        </header>
+
+        <div class="info-section">
+            <div class="info-card">
+                <h3>Proficiency Scale</h3>
+                <div class="rating-legend">
+                    <div class="legend-item">
+                        <span class="badge outstanding">5</span>
+                        <span>Outstanding</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="badge good">4</span>
+                        <span>Good</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="badge satisfactory">3</span>
+                        <span>Satisfactory</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="badge unsatisfactory">0</span>
+                        <span>Unsatisfactory</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info-card">
+                <h3>Calculation Method</h3>
+                <p><strong>Weighted Average:</strong> 65% / 35%</p>
+                <p><strong>Mastery Level:</strong> 3 points</p>
+            </div>
+        </div>
+
+        <div class="competencies">
+            <div class="competency-card">
+                <div class="competency-header">
+                    <h2>Advise-S2</h2>
+                    <span class="mastery-badge">Mastery: 3 pts</span>
+                </div>
+                <p class="description">Organize processes and information for new software:  adapt to changes, select from limited approaches, tailor solutions to constraints.</p>
+                <div class="rating-bars">
+                    <div class="rating-bar">
+                        <div class="bar-fill" data-rating="5" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="competency-card">
+                <div class="competency-header">
+                    <h2>Analysis-S2</h2>
+                    <span class="mastery-badge">Mastery: 3 pts</span>
+                </div>
+                <p class="description">Analyze software development processes and products in varied environments. Solve problems creatively using basic and advanced concepts independently.</p>
+                <div class="rating-bars">
+                    <div class="rating-bar">
+                        <div class="bar-fill" data-rating="5" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="competency-card">
+                <div class="competency-header">
+                    <h2>Design-S2</h2>
+                    <span class="mastery-badge">Mastery: 3 pts</span>
+                </div>
+                <p class="description">Create software that integrates into ICT systems, meets specific requirements, and can be easily incorporated post-delivery. Deal with unpredictability using a limited range of approaches to design efficiently.</p>
+                <div class="rating-bars">
+                    <div class="rating-bar">
+                        <div class="bar-fill" data-rating="5" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="competency-card">
+                <div class="competency-header">
+                    <h2>Manage&Control-S2</h2>
+                    <span class="mastery-badge">Mastery: 3 pts</span>
+                </div>
+                <p class="description">Oversee software development, improve performance, and ensure compatibility with existing systems. Deal with uncertainties when needed.</p>
+                <div class="rating-bars">
+                    <div class="rating-bar">
+                        <div class="bar-fill" data-rating="5" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="competency-card">
+                <div class="competency-header">
+                    <h2>Realise-S2</h2>
+                    <span class="mastery-badge">Mastery: 3 pts</span>
+                </div>
+                <p class="description">Develop and test software components according to specifications, address requirements, handle unpredictability, integrate smoothly with existing ICT infrastructure, select methods to resolve issues.</p>
+                <div class="rating-bars">
+                    <div class="rating-bar">
+                        <div class="bar-fill" data-rating="5" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="competency-card">
+                <div class="competency-header">
+                    <h2>Personal & Professional Development</h2>
+                    <span class="mastery-badge">Mastery: 3 pts</span>
+                </div>
+                <p class="description">Know your strengths and weaknesses in ICT and personal growth. Act according to your values to improve and learn continuously. </p>
+                <div class="rating-bars">
+                    <div class="rating-bar">
+                        <div class="bar-fill" data-rating="5" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="competency-card">
+                <div class="competency-header">
+                    <h2>Professional Methods & Ethics</h2>
+                    <span class="mastery-badge">Mastery: 3 pts</span>
+                </div>
+                <p class="description">Use professional methods to set goals, involve stakeholders, conduct research, provide advice, make decisions, and deliver reports ethically and sustainably, both individually and in teams.</p>
+                <div class="rating-bars">
+                    <div class="rating-bar">
+                        <div class="bar-fill" data-rating="5" style="width:  100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Proficiency Tracker | Weighted Average: 65% / 35%</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
