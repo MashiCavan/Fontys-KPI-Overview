@@ -4,6 +4,48 @@
     box-sizing: border-box;
 }
 
+/* Floating Navigation Buttons */
+.floating-nav {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    z-index: 1000;
+}
+
+.floating-btn {
+    width: 60px;
+    height: 60px;
+    background: #1a1a1a;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.floating-btn:hover {
+    transform: scale(1.1);
+    background: #333;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.floating-btn.active {
+    background: #000;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    border: 3px solid #fff;
+}
+
+.floating-btn .icon {
+    font-size: 1.8rem;
+}
+
 :root {
     --primary: #000000;
     --secondary: #666666;
@@ -57,25 +99,60 @@ header h1 {
     opacity: 0.9;
 }
 
-.info-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+.top-bar {
+    background: #000000;
+    color: white;
     padding: 1rem;
-    background: var(--bg-light);
-    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.title-section h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: white;
+}
+
+.title-section .subtitle {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+.info-section {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .info-card {
-    background: var(--bg-white);
-    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 0.5rem 0.75rem;
     border-radius: 4px;
-    border: 1px solid var(--border);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.8rem;
 }
 
 .info-card h3 {
-    color: var(--primary);
+    color: white;
+    margin-bottom: 0.25rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.info-card p {
+    font-size: 0.75rem;
+    margin: 0.15rem 0;
+    opacity: 0.9;
+}
+
+.info-card h3 {
     margin-bottom: 0.5rem;
     font-size: 0.95rem;
     font-weight: 600;
@@ -84,47 +161,6 @@ header h1 {
 .info-card p {
     font-size: 0.875rem;
     margin: 0.25rem 0;
-}
-
-.rating-legend {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-}
-
-.legend-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.875rem;
-}
-
-.badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 4px;
-    color: white;
-    font-weight: 600;
-    font-size: 0.875rem;
-}
-
-.badge.outstanding {
-    background: var(--outstanding);
-}
-
-.badge.good {
-    background: var(--good);
-}
-
-.badge.satisfactory {
-    background: var(--satisfactory);
-}
-
-.badge.unsatisfactory {
-    background: var(--unsatisfactory);
 }
 
 .competencies {
@@ -179,43 +215,127 @@ header h1 {
     font-size: 0.8rem;
 }
 
-.rating-bars {
+.deliverables {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
 }
 
-.rating-bar {
-    background: var(--bg-light);
-    height: 8px;
+.deliverable-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    padding: 0.4rem 0.5rem;
     border-radius: 4px;
+    transition: background-color 0.2s ease;
+    justify-content: space-between;
+}
+
+.deliverable-item:hover {
+    background-color: var(--bg-light);
+}
+
+.deliverable-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+.deliverable-item label {
+    flex: 1;
+    cursor: pointer;
+    color: var(--text-dark);
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.deliverable-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.deliverable-title-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info-icon {
+    width: 16px;
+    height: 16px;
+    background: var(--text-light);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.info-icon:hover {
+    background: var(--primary);
+    transform: scale(1.1);
+}
+
+.deliverable-subtitle {
+    color: var(--text-light);
+    font-size: 0.75rem;
+    line-height: 1.3;
+    margin-top: 0.25rem;
+    transition: all 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.deliverable-subtitle.expanded {
+    opacity: 1;
+    max-height: 100px;
+}
+
+.points {
+    background: var(--primary);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    min-width: 40px;
+    text-align: center;
+}
+
+.progress-container {
+    margin-top: 1rem;
+}
+
+.progress-bar {
+    background: var(--bg-light);
+    height: 10px;
+    border-radius: 5px;
     overflow: hidden;
     position: relative;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.bar-fill {
+.progress-fill {
     height: 100%;
-    border-radius: 4px;
-    background: #2a2a2a;
-    transition: width 1s ease;
+    background: linear-gradient(90deg, var(--primary), var(--good));
+    border-radius: 5px;
+    transition: width 0.5s ease;
     position: relative;
-}
-
-.bar-fill::after {
-    content: attr(data-rating);
-    position: absolute;
-    right: 4px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    font-size: 0.625rem;
-    font-weight: 600;
 }
 
 footer {
     background: var(--bg-light);
     text-align: center;
-    padding: 0.5rem;
     color: var(--text-light);
     border-top: 1px solid var(--border);
     font-size: 0.75rem;

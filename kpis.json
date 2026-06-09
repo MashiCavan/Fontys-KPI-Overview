@@ -1,0 +1,221 @@
+{
+  "competencies": [
+    {
+      "id": "advise-s2",
+      "name": "Advise Level 2",
+      "description": "Organize processes and information for new software: adapt to changes, select from limited approaches, tailor solutions to constraints.",
+      "deliverables": [
+        {
+          "id": "advise-1",
+          "title": "Project Documentation Package",
+          "subtitle": "Created comprehensive project documentation including detailed requirements analysis, UML design specifications, API documentation, and implementation guidelines for a React-based web application serving 10,000+ users",
+          "points": 2
+        },
+        {
+          "id": "advise-2",
+          "title": "Architecture Migration Plan",
+          "subtitle": "Successfully adapted project scope from monolithic architecture to microservices approach in response to changing stakeholder requirements, reducing deployment time by 60% for a distributed team of 8 developers",
+          "points": 2
+        },
+        {
+          "id": "advise-3",
+          "title": "Methodology Selection Report",
+          "subtitle": "Evaluated and selected Scrum methodology over Waterfall approach for a 12-month software development project, resulting in 40% faster feature delivery and improved team velocity from 20 to 35 story points per sprint",
+          "points": 3
+        },
+        {
+          "id": "advise-4",
+          "title": "CI/CD Pipeline Design Document",
+          "subtitle": "Developed customized CI/CD pipeline solution using Jenkins and Docker for a budget-constrained startup project, achieving 95% test automation coverage while staying within €50K infrastructure budget",
+          "points": 3
+        }
+      ]
+    },
+    {
+      "id": "analysis-s2",
+      "name": "Analysis Level 2",
+      "description": "Analyze software development processes and products in varied environments. Solve problems creatively using basic and advanced concepts independently.",
+      "deliverables": [
+        {
+          "id": "analysis-1",
+          "title": "Performance Analysis Report",
+          "subtitle": "Conducted thorough analysis of Node.js microservices architecture in a cloud-native environment, identifying performance bottlenecks that were causing 45% slower response times during peak hours",
+          "points": 2
+        },
+        {
+          "id": "analysis-2",
+          "title": "Optimization Solution Document",
+          "subtitle": "Applied creative problem-solving techniques using design patterns and algorithmic optimization to resolve memory leak issues in a Python data processing application, reducing memory usage by 70%",
+          "points": 3
+        },
+        {
+          "id": "analysis-3",
+          "title": "Code Refactoring Plan",
+          "subtitle": "Demonstrated independent application of fundamental software development concepts by implementing SOLID principles in a legacy C# codebase, improving maintainability and reducing bug introduction rate by 35%",
+          "points": 2
+        },
+        {
+          "id": "analysis-4",
+          "title": "System Architecture Review",
+          "subtitle": "Utilized advanced analytical concepts including complexity theory and performance profiling to evaluate a distributed system handling 1M+ daily transactions, identifying optimization opportunities worth €200K in annual savings",
+          "points": 3
+        }
+      ]
+    },
+    {
+      "id": "design-s2",
+      "name": "Design Level 2",
+      "description": "Create software that integrates into ICT systems, meets specific requirements, and can be easily incorporated post-delivery. Deal with unpredictability using a limited range of approaches to design efficiently.",
+      "deliverables": [
+        {
+          "id": "design-1",
+          "title": "REST API Design Specification",
+          "subtitle": "Designed and developed a RESTful API using Spring Boot that seamlessly integrates with existing SAP ERP systems and third-party payment gateways, handling 500K transactions daily with 99.9% uptime",
+          "points": 3
+        },
+        {
+          "id": "design-2",
+          "title": "System Architecture Diagram",
+          "subtitle": "Created software architecture using Domain-Driven Design principles that meets GDPR compliance requirements and supports multi-tenant SaaS model for 50+ enterprise clients",
+          "points": 2
+        },
+        {
+          "id": "design-3",
+          "title": "Microservices Deployment Strategy",
+          "subtitle": "Developed flexible microservices architecture using Kubernetes that accommodates unpredictable scaling requirements, auto-scaling from 3 to 50 pods during peak traffic periods",
+          "points": 2
+        },
+        {
+          "id": "design-4",
+          "title": "Component Integration Guide",
+          "subtitle": "Produced modular component design using TypeScript and React that enables plug-and-play integration, reducing new feature implementation time from 2 weeks to 3 days",
+          "points": 3
+        }
+      ]
+    },
+    {
+      "id": "manage-control-s2",
+      "name": "Manage&Control Level 2",
+      "description": "Oversee software development, improve performance, and ensure compatibility with existing systems. Deal with uncertainties when needed.",
+      "deliverables": [
+        {
+          "id": "manage-1",
+          "title": "Project Management Plan",
+          "subtitle": "Established and maintained oversight of Agile software development lifecycle for a 15-person cross-functional team, ensuring 95% on-time delivery rate across 24 quarterly releases",
+          "points": 3
+        },
+        {
+          "id": "manage-2",
+          "title": "Performance Monitoring Dashboard",
+          "subtitle": "Implemented performance monitoring using New Relic and Grafana dashboards, identifying and resolving database query optimization issues that improved application response time from 3.2s to 0.8s",
+          "points": 2
+        },
+        {
+          "id": "manage-3",
+          "title": "System Integration Strategy",
+          "subtitle": "Ensured software compatibility with legacy Oracle databases through comprehensive integration testing and data migration strategies, achieving zero data loss during system cutover",
+          "points": 3
+        },
+        {
+          "id": "manage-4",
+          "title": "Business Continuity Plan",
+          "subtitle": "Developed contingency plans and risk mitigation strategies for a critical healthcare system, including automated failover mechanisms that maintained 99.99% availability during infrastructure outages",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "realise-s2",
+      "name": "Realise Level 2",
+      "description": "Develop and test software components according to specifications, address requirements, handle unpredictability, integrate smoothly with existing ICT infrastructure, select methods to resolve issues.",
+      "deliverables": [
+        {
+          "id": "realise-1",
+          "title": "Authentication Service Implementation",
+          "subtitle": "Developed and implemented user authentication microservice using JWT tokens and OAuth 2.0 according to detailed technical specifications, supporting 50K concurrent users with sub-200ms response times",
+          "points": 3
+        },
+        {
+          "id": "realise-2",
+          "title": "Testing Strategy Document",
+          "subtitle": "Executed comprehensive testing protocols including 95% unit test coverage with Jest, integration testing with Postman, and end-to-end testing with Cypress, achieving zero critical bugs in production",
+          "points": 2
+        },
+        {
+          "id": "realise-3",
+          "title": "Feature Flag Implementation Plan",
+          "subtitle": "Implemented adaptive development strategies using feature flags and A/B testing frameworks to accommodate changing requirements, enabling 40% faster feature rollout cycles",
+          "points": 2
+        },
+        {
+          "id": "realise-4",
+          "title": "Real-time Data Synchronization Module",
+          "subtitle": "Achieved seamless integration of React frontend with GraphQL API and PostgreSQL database, implementing real-time data synchronization for a collaborative document editing platform",
+          "points": 3
+        }
+      ]
+    },
+    {
+      "id": "personal-professional-development",
+      "name": "Personal & Professional Development",
+      "description": "Know your strengths and weaknesses in ICT and personal growth. Act according to your values to improve and learn continuously.",
+      "deliverables": [
+        {
+          "id": "personal-1",
+          "title": "Skills Assessment Matrix",
+          "subtitle": "Conducted comprehensive self-assessment using 360-degree feedback and skills matrix analysis, identifying proficiency gaps in cloud architecture (AWS) and container orchestration (Kubernetes) requiring focused development",
+          "points": 2
+        },
+        {
+          "id": "personal-2",
+          "title": "Mentorship Program Proposal",
+          "subtitle": "Demonstrated consistent alignment with professional values by mentoring junior developers and advocating for ethical AI practices, leading to company-wide adoption of responsible ML guidelines",
+          "points": 3
+        },
+        {
+          "id": "personal-3",
+          "title": "Professional Development Roadmap",
+          "subtitle": "Implemented continuous learning through completion of 15 online courses and 3 certifications (AWS Solutions Architect, Scrum Master), applying new knowledge to improve team processes and reduce deployment failures by 60%",
+          "points": 3
+        },
+        {
+          "id": "personal-4",
+          "title": "Git Workflow Optimization Guide",
+          "subtitle": "Acquired and applied advanced Git workflow skills and CI/CD pipeline expertise, enabling team transition from manual deployments to automated pipelines that reduced release cycles from 2 weeks to 2 days",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "professional-methods-ethics",
+      "name": "Professional Methods & Ethics",
+      "description": "Use professional methods to set goals, involve stakeholders, conduct research, provide advice, make decisions, and deliver reports ethically and sustainably, both individually and in teams.",
+      "deliverables": [
+        {
+          "id": "ethics-1",
+          "title": "Professional Development Goals Document",
+          "subtitle": "Established SMART goals for professional development including \"Achieve AWS DevOps Professional certification within 6 months\" and \"Lead 3 knowledge-sharing sessions quarterly,\" tracking progress through bi-weekly reviews",
+          "points": 2
+        },
+        {
+          "id": "ethics-2",
+          "title": "Stakeholder Communication Plan",
+          "subtitle": "Facilitated stakeholder engagement through weekly standup meetings and monthly business reviews with product owners, resulting in 85% stakeholder satisfaction score and 30% reduction in requirement changes",
+          "points": 2
+        },
+        {
+          "id": "ethics-3",
+          "title": "Data Privacy Implementation Guide",
+          "subtitle": "Conducted GDPR compliance research and implemented data anonymization techniques using differential privacy algorithms, ensuring ethical data handling for a user base of 500K+ individuals",
+          "points": 3
+        },
+        {
+          "id": "ethics-4",
+          "title": "Sustainability Impact Assessment",
+          "subtitle": "Produced comprehensive sustainability report analyzing carbon footprint of cloud infrastructure choices, recommending migration to green data centers that reduced environmental impact by 40% while maintaining performance",
+          "points": 3
+        }
+      ]
+    }
+  ]
+}

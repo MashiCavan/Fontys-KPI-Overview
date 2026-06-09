@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Overview - Software Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-overview.css">
+</head>
+<body>
+    <!-- Floating Navigation Buttons -->
+    <div class="floating-nav">
+        <a href="index.html" class="floating-btn" title="KPI Tracker">
+            <span class="icon">📊</span>
+        </a>
+        <a href="projectoverview.html" class="floating-btn active" title="Project Overview">
+            <span class="icon">📋</span>
+        </a>
+    </div>
+    <div class="container">
+        <div class="top-bar">
+            <div class="title-section">
+                <h1>Project Overview & Planning</h1>
+                <p class="subtitle">Track your project structure and progress, Made by Micha</p>
+            </div>
+            <div>
+                <button class="btn-save" id="save-project">Save Progress</button>
+                <button class="btn-reset" id="reset-project">Reset Form</button>
+
+            </div>
+        </div>
+
+        <div class="project-content horizontal-scroll">
+            <div class="flowchart-timeline">
+                <!-- Project Information Section -->
+                <section class="overview-section info-section-header">
+                    <h2>📋 Project Information</h2>
+                <div class="form-group">
+                    <label for="project-name">Project Name</label>
+                    <input type="text" id="project-name" placeholder="Enter project name">
+                </div>
+                <div class="form-group">
+                    <label for="project-description">Project Description</label>
+                    <textarea id="project-description" rows="3" placeholder="Brief description of the project"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="start-date">Start Date</label>
+                        <input type="date" id="start-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="end-date">End Date</label>
+                        <input type="date" id="end-date">
+                    </div>
+                </div>
+                </section>
+
+                <div class="flow-arrow-horizontal">→</div>
+
+                <!-- Per Project Section -->
+                <section class="overview-section flowchart-section">
+                <h2>🔷 Per Project</h2>
+                
+                <div class="flowchart-container">
+                    <div class="flowchart-node">
+                        <input type="checkbox" id="stakeholder-meeting" data-section="per-project">
+                        <label for="stakeholder-meeting">Stakeholder Meeting</label>
+                        <textarea class="notes-field" placeholder="Notes..."></textarea>
+                    </div>
+                    
+                    <div class="flow-connector">↓</div>
+                    
+                    <div class="flowchart-node">
+                        <input type="checkbox" id="debriefing" data-section="per-project">
+                        <label for="debriefing">Debriefing</label>
+                        <textarea class="notes-field" placeholder="Notes..."></textarea>
+                    </div>
+                    
+                    <div class="flow-connector">↓</div>
+                    
+                    <div class="flowchart-node">
+                        <input type="checkbox" id="requirements" data-section="per-project">
+                        <label for="requirements">Requirements</label>
+                        <textarea class="notes-field" placeholder="Notes..."></textarea>
+                    </div>
+                    
+                    <div class="flow-connector">↓</div>
+                    
+                    <div class="flowchart-node wide-node">
+                        <input type="checkbox" id="project-plan" data-section="per-project">
+                        <label for="project-plan">Project Plan</label>
+                        <div class="sub-items">
+                            <span>• Manifesto</span>
+                            <span>• Git Strategy</span>
+                            <span>• Quotation of Sprints</span>
+                            <span>• Agreements</span>
+                            <span>• Agile/Scrum Plan</span>
+                        </div>
+                        <textarea class="notes-field" placeholder="Notes..."></textarea>
+                    </div>
+                    
+                    <div class="flow-connector">↓</div>
+                    
+                    <div class="flowchart-branches">
+                        <div class="flowchart-node branch-node">
+                            <input type="checkbox" id="c4-architecture" data-section="per-project">
+                            <label for="c4-architecture">C4 Architecture Diagram</label>
+                            <textarea class="notes-field" placeholder="Notes..."></textarea>
+                        </div>
+                        
+                        <div class="flowchart-node branch-node">
+                            <input type="checkbox" id="project-design" data-section="per-project">
+                            <label for="project-design">Project Design Models</label>
+                            <textarea class="notes-field" placeholder="Notes..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="flow-connector">↓</div>
+                    
+                    <div class="flowchart-node">
+                        <input type="checkbox" id="prototype" data-section="per-project">
+                        <label for="prototype">Realisation of Prototype</label>
+                        <textarea class="notes-field" placeholder="Notes..."></textarea>
+                    </div>
+                </div>
+                </section>
+
+                <div class="flow-arrow-horizontal">→</div>
+
+                <!-- Per Sprint Section -->
+                <section class="overview-section flowchart-section">
+                <h2>🔄 Per Sprint</h2>
+                
+                <div class="sprint-flow">
+                    <div class="sprint-phase">
+                        <h3>Sprint Start</h3>
+                        <div class="flowchart-container">
+                            <div class="flowchart-node sprint-node">
+                                <input type="checkbox" id="sprint-startup" data-section="per-sprint">
+                                <label for="sprint-startup">Startup</label>
+                                <div class="sub-items">
+                                    <span>• What have we taken on?</span>
+                                    <span>• How do we maintain agreements?</span>
+                                    <span>• Where do we focus?</span>
+                                </div>
+                                <textarea class="notes-field" placeholder="Notes..."></textarea>
+                            </div>
+                            
+                            <div class="flow-connector">↓</div>
+                            
+                            <div class="flowchart-node sprint-node">
+                                <input type="checkbox" id="scrum-overview-new" data-section="per-sprint">
+                                <label for="scrum-overview-new">Scrum Overview Refresh</label>
+                                <textarea class="notes-field" placeholder="Notes..."></textarea>
+                            </div>
+                            
+                            <div class="flow-connector">↓</div>
+                            
+                            <div class="flowchart-node sprint-node">
+                                <input type="checkbox" id="new-scrum-master" data-section="per-sprint">
+                                <label for="new-scrum-master">New Scrum Master</label>
+                                <textarea class="notes-field" placeholder="Notes..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sprint-divider">⟺</div>
+
+                    <div class="sprint-phase">
+                        <h3>Sprint End</h3>
+                        <div class="flowchart-container">
+                            <div class="flowchart-node sprint-node">
+                                <input type="checkbox" id="retrospective" data-section="per-sprint">
+                                <label for="retrospective">Retrospective</label>
+                                <div class="sub-items">
+                                    <span>• What was achieved?</span>
+                                    <span>• What not?</span>
+                                    <span>• How did it go?</span>
+                                    <span>• How can it be improved?</span>
+                                </div>
+                                <textarea class="notes-field" placeholder="Notes..."></textarea>
+                            </div>
+                            
+                            <div class="flow-connector">↓</div>
+                            
+                            <div class="flowchart-node sprint-node">
+                                <input type="checkbox" id="personal-reflection" data-section="per-sprint">
+                                <label for="personal-reflection">Personal Reflection</label>
+                                <textarea class="notes-field" placeholder="Notes..."></textarea>
+                            </div>
+                            
+                            <div class="flow-connector">↓</div>
+                            
+                            <div class="flowchart-node sprint-node">
+                                <input type="checkbox" id="teacher-feedback" data-section="per-sprint">
+                                <label for="teacher-feedback">Teacher Feedback</label>
+                                <textarea class="notes-field" placeholder="Notes..."></textarea>
+                            </div>
+                            
+                            <div class="flow-connector">↓</div>
+                            
+                            <div class="flowchart-node sprint-node">
+                                <input type="checkbox" id="scrum-overview-end" data-section="per-sprint">
+                                <label for="scrum-overview-end">Scrum Overview</label>
+                                <textarea class="notes-field" placeholder="Notes..."></textarea>
+                            </div>
+                            
+                            <div class="flow-connector">↓</div>
+                            
+                            <div class="flowchart-node sprint-node">
+                                <input type="checkbox" id="presentations" data-section="per-sprint">
+                                <label for="presentations">Presentations</label>
+                                <textarea class="notes-field" placeholder="Notes..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+
+                <div class="flow-arrow-horizontal">→</div>
+
+                <!-- Next Steps Section -->
+                <section class="overview-section">
+                <h2>🎯 Next Steps & Priorities</h2>
+                <div id="next-steps-container">
+                    <!-- Next steps will be added dynamically -->
+                </div>
+                <button class="btn-add" id="add-next-step">+ Add Next Step</button>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="project-overview.js"></script>
+</body>
+</html>
